@@ -1,0 +1,32 @@
+{% extends "master.twig" %}
+{% block content %}
+  <!-- Always shows a header, even in smaller screens. -->
+<div class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading">{{page.title|title}} <small>{{page.subtitle}}</small></a>
+    <ul class="pure-menu-list">
+        {% include 'components/navigation.twig' %}
+    </ul>
+</div>
+
+<div class="banner">
+    <h1 class="banner-head">
+        Simple Pricing.<br>
+        Try before you buy.
+    </h1>
+</div>
+
+<div class="l-content">
+    <div class="pricing-tables pure-g">  
+      {% for view,params in views %}
+      {% include view with params %}
+      {% endfor %}
+    </div> <!-- end pricing-tables -->
+
+</div> <!-- end l-content -->
+
+<div class="footer l-box">
+    <p>
+        <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
+    </p>
+</div>
+{% endblock %}
