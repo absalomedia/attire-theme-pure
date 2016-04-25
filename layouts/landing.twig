@@ -1,15 +1,13 @@
 {% extends "master.twig" %}
-
+{% block content %}
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="">{{page.title|title}} <small>{{page.subtitle}}</small></a>
-
         <ul class="pure-menu-list">
             {% include 'components/navigation.twig' %}
         </ul>
     </div>
 </div>
-
 <div class="splash-container">
     <div class="splash">
         <h1 class="splash-head">Big Bold Text</h1>
@@ -21,15 +19,13 @@
         </p>
     </div>
 </div>
-
 <div class="content-wrapper">
     <div class="content">
         <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
-
         <div class="pure-g">
-             {% for view,params in views %}
-                            {% include view with params %}
-                      {% endfor %}
+            {% for view,params in views %}
+                {% include view with params %}
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
