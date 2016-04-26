@@ -6,7 +6,7 @@ A Yahoo Pure ([http://purecss.io/](http://purecss.io/)) theme for Codeigniter v3
 
 With composer:
 
-    composer require abm/attire-theme-pure
+    composer require abm/attire-theme-pure dev-master
 
 ## Page Templates
 
@@ -14,7 +14,6 @@ This theme comes with different page layouts.
 
 * Blog 
 * Landing Page
-* Login
 * Pricing Table
 * Sidebar
 
