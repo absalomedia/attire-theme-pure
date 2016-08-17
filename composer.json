@@ -1,6 +1,7 @@
 {
     "name": "abm/attire-theme-pure",
-    "description": "A Yahoo Pure CSS theme for Codeigniter v3.0 using Attire.",
+    "version": "1.0.4",
+    "description": "A Yahoo Pure CSS theme for Codeigniter v3.x using Attire.",
     "type": "attire-theme",
     "require": {
         "dsv/bundle-installer": "^1.0"
